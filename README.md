@@ -408,9 +408,7 @@ If TG-FDINet contributes to your research, please cite:
   title   = {{TG-FDINet}: A Temporal-Graph Fusion Network for False Data
              Injection Detection in the Internet of Medical Things},
   author  = {Hasan, Md Mehedi},
-  journal = {IEEE Transactions on [Journal]},
   year    = {2025},
-  doi     = {10.xxxx/xxxxxx},
   note    = {Code: \url{https://github.com/mehedi93hasan/TG-FDINet}}
 }
 ```
