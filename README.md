@@ -98,11 +98,12 @@ CPU latency measured per window (*L*=15, *C*=6) averaged over 1,000 inference ca
 
 ## Architecture
 
-```
+
 
 <p align="center">
   
-  <img width="2752" height="1404" alt="fig_1" src="https://github.com/user-attachments/assets/21cbc530-c659-4415-a9e1-085fb8d35b99" />
+  <img width="2752" height="1404" alt="fig_1" src="https://github.com/user-attachments/assets/fc1ca231-a3de-475d-9d6d-131ea65196a0" />
+
 
 </p>
 
