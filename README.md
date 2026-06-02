@@ -98,28 +98,9 @@ CPU latency measured per window (*L*=15, *C*=6) averaged over 1,000 inference ca
 ## Architecture
 
 ```
-Input Window W_t ∈ R^{C × L}
-        │
-        ├──────────────────────────────────┐
-        │                                  │
-        ▼                                  ▼
- ┌─────────────┐                  ┌──────────────────┐
- │  PCG-GAT    │  (Graph branch)  │    MS-TCN        │  (Temporal branch)
- │  K=3 layers │                  │  d1=1  │  d2=4   │
- │  Fixed A    │                  │  Beat  │  Trend  │
- └──────┬──────┘                  └────────┬─────────┘
-        │  Z_G ∈ R^{C×d}                   │  Z_T ∈ R^{C×d}
-        └──────────────┐  ┌────────────────┘
-                       ▼  ▼
-               ┌────────────────┐
-               │      CMFG      │  g = σ(W_g [Z_G ‖ Z_T] + b_g)
-               │  Adaptive Gate │  Z_F = g ⊙ Z_G + (1-g) ⊙ Z_T
-               └───────┬────────┘
-                       │  Z_F ∈ R^{C×d}
-                       ▼
-               Global Average Pool → R^d
-                       ▼
-               Linear + Sigmoid → ŷ_t ∈ (0,1)
+<img width="2752" height="1404" alt="fig_1" src="https://github.com/user-attachments/assets/73512400-e631-46cc-a49b-8d656ffe1a87" />
+
+
 ```
 
 ### Physiological Causal Graph (PCG)
@@ -403,9 +384,7 @@ If you use TG-FDINet in your research, please cite:
   title     = {{TG-FDINet}: A Temporal-Graph Fusion Network for False Data
                Injection Detection in the Internet of Medical Things},
   author    = {Hasan, Md Mehedi},
-  journal   = {IEEE Transactions on [Journal]},
   year      = {2025},
-  doi       = {10.xxxx/xxxxxx},
   note      = {Code: \url{https://github.com/mehedi93hasan/TG-FDINet}}
 }
 ```
