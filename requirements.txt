@@ -1,0 +1,33 @@
+# TG-FDINet dependencies
+# Tested with Python 3.9–3.11
+
+# Core deep learning
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Machine learning utilities
+scikit-learn>=1.3.0
+
+# Data handling
+pandas>=2.0.0
+h5py>=3.9.0
+
+# MIMIC-III waveform reading
+wfdb>=4.1.0
+
+# Configuration
+pyyaml>=6.0
+
+# Plotting (for figures)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Progress bars
+tqdm>=4.65.0
+
+# Optional: mixed-precision training
+# torch already includes AMP support natively via torch.cuda.amp

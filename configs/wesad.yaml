@@ -1,0 +1,25 @@
+# TG-FDINet Configuration — WESAD
+# ---------------------------------
+
+dataset:
+  name:         wesad
+  data_root:    /data/WESAD              # update to your local path
+  channels:     [ECG, EDA, BVP, RESP, ST, ACC]
+  win_len:      15
+  attack_ratio: 0.05
+  seed:         42
+
+model:
+  d_model:      64
+  gat_layers:   3
+  dropout:      0.1
+  gat_alpha:    0.2
+
+training:
+  epochs:       100
+  batch_size:   64
+  lr:           1.0e-4
+  patience:     10
+  workers:      4
+
+save_dir:       checkpoints/

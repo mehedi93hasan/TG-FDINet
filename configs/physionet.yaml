@@ -1,0 +1,28 @@
+# TG-FDINet Configuration — PhysioNet/CinC 2012
+# -----------------------------------------------
+# Matches the exact hyperparameters reported in the paper.
+# No per-dataset tuning was applied; these settings are uniform
+# across all three evaluation benchmarks.
+
+dataset:
+  name:         physionet
+  data_root:    /data/physionet2012       # update to your local path
+  channels:     [HR, SpO2, SysBP, DiaBP, RR, Temp]
+  win_len:      15
+  attack_ratio: 0.05                      # ~5% anomaly rate (Table I)
+  seed:         42
+
+model:
+  d_model:      64
+  gat_layers:   3
+  dropout:      0.1
+  gat_alpha:    0.2
+
+training:
+  epochs:       100
+  batch_size:   64
+  lr:           1.0e-4
+  patience:     10                        # early stopping on val F1
+  workers:      4
+
+save_dir:       checkpoints/
