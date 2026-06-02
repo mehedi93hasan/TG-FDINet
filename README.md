@@ -18,8 +18,7 @@
     <img src="https://img.shields.io/badge/PyTorch-2.1%2B-orange?style=flat-square&logo=pytorch" alt="PyTorch"/>
   </a>
   <img src="https://img.shields.io/github/stars/mehedi93hasan/TG-FDINet?style=flat-square" alt="Stars"/>
-  <img width="2752" height="1404" alt="fig_1" src="https://github.com/user-attachments/assets/21cbc530-c659-4415-a9e1-085fb8d35b99" />
-
+ 
 </p>
 
 ---
@@ -101,7 +100,11 @@ CPU latency measured per window (*L*=15, *C*=6) averaged over 1,000 inference ca
 
 ```
 
+<p align="center">
+  
+  <img width="2752" height="1404" alt="fig_1" src="https://github.com/user-attachments/assets/21cbc530-c659-4415-a9e1-085fb8d35b99" />
 
+</p>
 
 
 ```
